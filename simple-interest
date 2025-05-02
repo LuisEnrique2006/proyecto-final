@@ -1,0 +1,11 @@
+#!/bin/bash
+# Cálculo de interés simple
+echo "Ingrese el capital:"
+read capital
+echo "Ingrese el interés anual (%):"
+read interes
+echo "Ingrese el tiempo (años):"
+read tiempo
+
+resultado=$(echo "$capital * $interes * $tiempo / 100" | bc)
+echo "El interés simple es: $resultado"
